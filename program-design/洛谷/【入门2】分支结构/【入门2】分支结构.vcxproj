@@ -127,10 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="P1046 [NOIP2005 普及组] 陶陶摘苹果.cpp" />
+    <ClCompile Include="P1055 [NOIP2008 普及组] ISBN 号码.cpp" />
     <ClCompile Include="P1085 [NOIP2004 普及组] 不高兴的津津.cpp" />
     <ClCompile Include="P1422 小玉家的电费.cpp" />
+    <ClCompile Include="P1424 小鱼的航程(改进版).cpp" />
+    <ClCompile Include="P1888 三角函数.cpp" />
     <ClCompile Include="P1909 [NOIP2016 普及组] 买铅笔.cpp" />
     <ClCompile Include="P2433 【深基1-2】小学数学 N 合一.cpp" />
+    <ClCompile Include="P4414 [COCI2006-2007 2] ABC.cpp" />
     <ClCompile Include="P5709 【深基2.习6】Apples Prologue  苹果和虫子.cpp" />
     <ClCompile Include="P5710 【深基3.例2】数的性质.cpp" />
     <ClCompile Include="P5711 【深基3.例3】闰年判断.cpp" />

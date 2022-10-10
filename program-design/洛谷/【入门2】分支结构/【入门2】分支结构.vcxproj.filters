@@ -54,5 +54,20 @@
     <ClCompile Include="P1422 小玉家的电费.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="P1424 小鱼的航程(改进版).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1888 三角函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1046 [NOIP2005 普及组] 陶陶摘苹果.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P4414 [COCI2006-2007 2] ABC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1055 [NOIP2008 普及组] ISBN 号码.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
