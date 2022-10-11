@@ -18,5 +18,8 @@
     <ClCompile Include="P5718 【深基4.例2】找最小值.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="P5719 【深基4.例3】分类平均.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
