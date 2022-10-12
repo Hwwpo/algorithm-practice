@@ -127,8 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="P1035 [NOIP2002 普及组] 级数求和.cpp" />
+    <ClCompile Include="P1980 [NOIP2013 普及组] 计数问题.cpp" />
     <ClCompile Include="P5718 【深基4.例2】找最小值.cpp" />
     <ClCompile Include="P5719 【深基4.例3】分类平均.cpp" />
+    <ClCompile Include="P5720 【深基4.例4】一尺之棰.cpp" />
+    <ClCompile Include="P5721 【深基4.例6】数字直角三角形.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

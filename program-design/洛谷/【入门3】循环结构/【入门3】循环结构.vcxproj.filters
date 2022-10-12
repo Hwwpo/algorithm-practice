@@ -21,5 +21,17 @@
     <ClCompile Include="P5719 【深基4.例3】分类平均.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="P5720 【深基4.例4】一尺之棰.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P5721 【深基4.例6】数字直角三角形.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1980 [NOIP2013 普及组] 计数问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1035 [NOIP2002 普及组] 级数求和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
