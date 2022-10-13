@@ -33,5 +33,20 @@
     <ClCompile Include="P1035 [NOIP2002 普及组] 级数求和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="P2669 [NOIP2015 普及组] 金币.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P5722 【深基4.例11】数列求和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P5723 【深基4.例13】质数口袋.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1217 [USACO1.5]回文质数 Prime Palindromes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1423 小玉在游泳.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
