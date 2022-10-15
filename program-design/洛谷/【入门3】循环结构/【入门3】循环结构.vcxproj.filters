@@ -48,5 +48,35 @@
     <ClCompile Include="P1423 小玉在游泳.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="P1307 [NOIP2011 普及组] 数字反转.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1720 月落乌啼算钱（斐波那契数列）.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P5724 【深基4.习5】求极差 最大跨度值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1420 最长连号.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1075 [NOIP2012 普及组] 质因数分解.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P5725 【深基4.习8】求三角形.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P5726 【深基4.习9】打分.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P4956 [COCI2017-20186] Davor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1089 [NOIP2004 提高组] 津津的储蓄计划.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="P1009 [NOIP1998 普及组] 阶乘之和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -127,17 +127,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="P1009 [NOIP1998 普及组] 阶乘之和.cpp" />
     <ClCompile Include="P1035 [NOIP2002 普及组] 级数求和.cpp" />
+    <ClCompile Include="P1075 [NOIP2012 普及组] 质因数分解.cpp" />
+    <ClCompile Include="P1089 [NOIP2004 提高组] 津津的储蓄计划.cpp" />
     <ClCompile Include="P1217 [USACO1.5]回文质数 Prime Palindromes.cpp" />
+    <ClCompile Include="P1307 [NOIP2011 普及组] 数字反转.cpp" />
+    <ClCompile Include="P1420 最长连号.cpp" />
     <ClCompile Include="P1423 小玉在游泳.cpp" />
+    <ClCompile Include="P1720 月落乌啼算钱（斐波那契数列）.cpp" />
     <ClCompile Include="P1980 [NOIP2013 普及组] 计数问题.cpp" />
     <ClCompile Include="P2669 [NOIP2015 普及组] 金币.cpp" />
+    <ClCompile Include="P4956 [COCI2017-20186] Davor.cpp" />
     <ClCompile Include="P5718 【深基4.例2】找最小值.cpp" />
     <ClCompile Include="P5719 【深基4.例3】分类平均.cpp" />
     <ClCompile Include="P5720 【深基4.例4】一尺之棰.cpp" />
     <ClCompile Include="P5721 【深基4.例6】数字直角三角形.cpp" />
     <ClCompile Include="P5722 【深基4.例11】数列求和.cpp" />
     <ClCompile Include="P5723 【深基4.例13】质数口袋.cpp" />
+    <ClCompile Include="P5724 【深基4.习5】求极差 最大跨度值.cpp" />
+    <ClCompile Include="P5725 【深基4.习8】求三角形.cpp" />
+    <ClCompile Include="P5726 【深基4.习9】打分.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
