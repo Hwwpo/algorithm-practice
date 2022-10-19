@@ -18,5 +18,14 @@
     <ClCompile Include="P1428 小鱼比可爱.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="高精度减法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="子矩阵的和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="第k个数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
