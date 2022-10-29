@@ -27,5 +27,8 @@
     <ClCompile Include="第k个数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="模拟散列表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

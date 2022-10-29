@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="P1428 小鱼比可爱.cpp" />
     <ClCompile Include="子矩阵的和.cpp" />
+    <ClCompile Include="模拟散列表.cpp" />
     <ClCompile Include="第k个数.cpp" />
     <ClCompile Include="高精度减法.cpp" />
   </ItemGroup>
