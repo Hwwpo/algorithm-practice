@@ -39,6 +39,10 @@ int main()
 		a.push_back(make_pair(w, p));
 	}
 	sort(a.begin(), a.end(), cmp); // w[i]按p[i]/w[i]的非增次序排序
+	for(int i = 0; i < n; i++)
+	{
+		cout << a[i].first << '-' << a[i].second << endl;
+	}
 	float x[10];
 	GreedyKnapsack(x);
 	cout << "得到的x数组为："; 
