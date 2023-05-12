@@ -2,8 +2,6 @@
 
 using namespace std;
 
-
-
 int a[10] = {1, 3, 5, 46, 47, 55, 89, 90, 100, 134};
 
 int sanfen(int l, int r, int x){
