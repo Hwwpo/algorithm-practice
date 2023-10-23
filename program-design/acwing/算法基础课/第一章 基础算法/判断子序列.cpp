@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -9,22 +9,19 @@ int a[N], b[N];
 
 int main()
 {
-	scanf("%d%d", &n, &m);
-	for(int i = 0; i < n; i ++) scanf("%d", &a[i]);
-	for(int i = 0; i < m; i ++) scanf("%d", &b[i]);
+	cin >> n >> m;
+	for(int i = 0; i < n; i++) cin >> a[i];
+	for(int i = 0; i < m; i++) cin >> b[i];
 	
 	for(int i = 0, j = 0; i < m; i++)
 	{
-		if(a[j] == b[i])
-		{
-			j++;
-		}
+		if(b[i] == a[j]) j++;
 		if(j == n)
 		{
 			puts("Yes");
 			return 0;
 		}
-	}	
+	}
 	puts("No");
 	return 0;
- } 
+}
