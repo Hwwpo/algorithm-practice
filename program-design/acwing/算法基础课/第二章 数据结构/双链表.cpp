@@ -1,10 +1,12 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-const int N = 1e6 + 10;
+const int N = 1e5 + 10;
 
-int l[N], r[N], e[N], idx;
+int m;
+int l[N], r[N], e[N];
+int idx;
 
 void init()
 {
@@ -13,75 +15,62 @@ void init()
 	idx = 2;
 }
 
-void add_to_head(int x)
+void add_to_right(int k, int x)
 {
 	e[idx] = x;
-	r[idx] = r[0];
-	l[idx] = 0;
-	l[r[0]] = idx;
-	r[0] = idx++;
-}
-
-void add_to_tial(int x)
-{
-	e[idx] = x;
-	l[idx] = l[1];
-	r[idx] = 1;
-	r[l[1]] = idx;
-	l[1] = idx++;
+	l[idx] = k;
+	r[idx] = r[k];
+	l[r[k]] = idx;
+	r[k] = idx++;
 }
 
 void remove(int k)
 {
-	r[l[k]] = r[k];
 	l[r[k]] = l[k];
+	r[l[k]]	= r[k];
 }
 
-void add_to_right(int k, int x)
-{
-	e[idx] = x;
-	r[idx] = r[k];
-	l[idx] = k;
-	r[k] = idx;
-	l[r[idx]] = idx++;
-	
-}
 int main()
 {
-	int m;
-	cin >> m;
+	scanf("%d", &m);
 	init();
-	while(m--)
-	{
-		int k, x;
-		string str;
-		cin >> str;
-		if(str == "L")
+	while (m--) {
+		string op;
+		cin >> op;
+		if (op == "L")
 		{
-			cin >> x;
+			int x;
+			scanf("%d", &x);
 			add_to_right(0, x);
 		}
-		if(str == "R")
+		else if (op == "R") 
 		{
-			cin >> x;
+			int x;
+			scanf("%d", &x);
 			add_to_right(l[1], x);
 		}
-		if(str == "D")
+		else if(op == "D")
 		{
-			cin >> k;
-			remove(k + 1);
+			int x;
+			scanf("%d", &x);
+			remove(x + 1);
 		}
-		if(str == "IL")
+		else if(op == "IL")
 		{
-			cin >> k >> x;
-			add_to_right(l[k+1], x);
+			int x, k;
+			scanf("%d%d", &k, &x);
+			add_to_right(l[k + 1], x);
 		}
-		if(str == "IR")
+		else
 		{
-			cin >> k >> x;
-			add_to_right(k+1, x);
+			int x, k;
+			scanf("%d%d", &k, &x);
+			add_to_right(k + 1, x);
 		}
 	}
-	for(int i = r[0]; i != 1; i = r[i]) cout << e[i] <<' ';
-	return 0;
+	
+	for(int i = r[0]; i != 1; i = r[i])
+	{
+		printf("%d ", e[i]);
+	}
 }

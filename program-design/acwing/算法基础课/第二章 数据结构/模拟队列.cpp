@@ -1,23 +1,19 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-const int N = 1e6 + 10;
+const int N = 1e5 + 10;
 
-int q[N], hh, tt;
-void init()
-{
-	hh = 0;
-	tt = -1;
-}
-void pop()
-{
-	hh++;
-}
+int q[N], hh, tt = -1;
 
 void push(int x)
 {
 	q[++tt] = x;
+}
+
+void pop()
+{
+	hh++;
 }
 
 bool empty()
@@ -31,15 +27,12 @@ int query()
 }
 int main()
 {
-	init();
 	int m;
 	cin >> m;
-	while(m--)
-	{
+	while (m--) {
 		string op;
 		cin >> op;
-		if(op == "push")
-		{
+		if (op == "push") {
 			int x;
 			cin >> x;
 			push(x);
@@ -50,13 +43,13 @@ int main()
 		}
 		else if(op == "empty")
 		{
-			if(empty) puts("NO");
-			else puts("YES");
+			auto answer = empty()?"NO":"YES";
+			cout << answer << endl;
 		}
 		else
 		{
-			cout << query() << endl;
+			int answer = query();
+			cout << answer << endl;
 		}
 	}
-	return 0;
 }

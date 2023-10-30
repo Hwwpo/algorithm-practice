@@ -1,26 +1,24 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 const int N = 1e5 + 10;
 
-int n;
-int stk[N], tt = 0;
+int stk[N], tt;
 
 int main()
 {
-	cin.tie(0);
-	ios::sync_with_stdio(false);
+	int n;
 	cin >> n;
-	for(int i = 0; i < n; i++)
-	{
+	while (n--) {
 		int x;
 		cin >> x;
-		while(tt && stk[tt] >= x) tt--;
+		while (tt && stk[tt] >= x) {
+			tt--;
+		}
 		if(tt) cout << stk[tt] << ' ';
 		else cout << "-1 ";
 		stk[++tt] = x;
-		
 	}
 	return 0;
 }

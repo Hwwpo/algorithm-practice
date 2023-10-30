@@ -61,7 +61,7 @@ int main()
 		}
 		else if(op == "DM")
 		{
-			heap_swap(1, size);
+			heap_swap(1, Size);
 			Size--;
 			down(1);
 		}

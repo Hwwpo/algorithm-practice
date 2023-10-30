@@ -1,52 +1,55 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-const int N = 1e6 + 10;
+const int N = 1e5 + 10;
 
-int stk[N], tt = 0;
+int m, tt;
+int stk[N];
 
-void push(int x){
+void push(int x)
+{
 	stk[++tt] = x;
 }
+
 void pop()
 {
-	tt--; 
- } 
+	tt--;
+}
+
 bool empty()
 {
- 	return tt > 0;
- }
+	return tt > 0;
+}
+
 int query()
 {
 	return stk[tt];
 }
 int main()
 {
-	int m;
 	cin >> m;
-	while(m--)
-	{
+	while (m--) {
 		string op;
 		cin >> op;
-		if(op == "push")
+		if (op == "push")
 		{
 			int x;
 			cin >> x;
 			push(x);
 		}
-		else if(op == "pop")
+		else if (op == "pop")
 		{
 			pop();
 		}
-		else if(op == "empty")
+		else if (op == "empty")
 		{
-			if(!empty()) puts("YES");
-			else puts("NO");
+			auto answer = empty() ? "NO": "YES";
+			cout << answer << endl;
 		}
-		else if(op == "query")
+		else
 		{
-			cout<<query()<<endl;
+			cout << query() << endl;
 		}
 	}
 	return 0;

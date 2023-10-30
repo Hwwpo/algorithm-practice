@@ -1,33 +1,31 @@
-#include<iostream>
-#include<unordered_map>
-#include<stack>
-#include<string.h>
+#include <iostream>
+#include <stack>
+#include <unordered_map>
 using namespace std;
 
 unordered_map<char, int> priority{{'+', 1}, {'-', 1}, {'*', 2}, {'/', 2}};
-
 stack<int> nums;
 stack<char> op;
 
 void eval()
 {
+	int res = 0;
 	int a = nums.top();
 	nums.pop();
 	
 	int b = nums.top();
 	nums.pop();
 	
-	char ch = op.top();
+	int ch = op.top();
 	op.pop();
-	int res = 0;
-	if(ch == '+') res = a + b;
-	if(ch == '-') res = b - a;
-	if(ch == '*') res = a * b;
-	if(ch == '/') res = b / a;
 	
-	nums.push(res); 
+	if(ch == '+') res = a + b;
+	else if(ch == '-') res = b - a;
+	else if(ch == '*') res = a * b;
+	else res = b / a;
+	
+	nums.push(res);
 }
-
 
 int main()
 {
@@ -35,38 +33,37 @@ int main()
 	cin >> a;
 	for(int i = 0; i < a.size(); i++)
 	{
-		if(isdigit(a[i]))
+		char ch = a[i];
+		if(isdigit(ch))
 		{
 			int x = 0, j = i;
-			while(j < a.size() && isdigit(a[j]))
-			{
+			while (j < a.size() && isdigit(a[j])) {
 				x = x * 10 + a[j++] - '0';
 			}
 			nums.push(x);
 			i = j - 1;
 		}
-		else if(a[i] == '(')
+		else if (ch == '(')
 		{
-			op.push(a[i]);
+			op.push(ch);
 		}
-		else if(a[i] == ')')
+		else if(ch == ')')
 		{
-			while(op.top() != '(')
-			{
+			while (op.top() != '(') {
 				eval();
 			}
 			op.pop();
 		}
-		else
-		{
-			while(op.size() && priority[op.top()] >= priority[a[i]])
-			{
+		else {
+			while (op.size() && priority[op.top()] >= priority[ch]) {
 				eval();
 			}
-			op.push(a[i]);
+			op.push(ch);
 		}
 	}
-	while(op.size()) eval();
+	while (op.size()) {
+		eval();
+	}
 	cout << nums.top();
-	return 0; 
-  }  
+	return 0;
+}
